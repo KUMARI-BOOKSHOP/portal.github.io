@@ -54,34 +54,35 @@
             </a>
         </div>
 
-        <div class="form-group">
-            <label for="name"> Name</label>
-            <input name="name" type="text" class="form-control" id="name" placeholder="Name">
-        </div>
-        <div class="form-group">
-            <label for="address">Address</label>
-            <input name="address" type="text" class="form-control" id="address" placeholder="Address">
-        </div>
-        <div class="form-group">
-            <label for="nic">NIC Number</label>
-            <input name="nic" type="text" class="form-control" id="nic" placeholder="NIC">
-        </div>
-        <div class="form-group">
-            <label for="contact">Contact Number</label>
-            <input name="contact" type="text" class="form-control" id="contact" placeholder="Contact">
-        </div>
-        <div>
-            <label >Add your wish list clearly in here</label>
-        </div>
-        <div class="form-floating">
-            <textarea class="form-control"   placeholder="add your wish list clearly in here" id="floatingTextarea"></textarea>
-        </div>
-        <!--          <div class="d-flex justify-content-between">-->
-        <div class="d-flex justify-content-end">
-            <a href="./index.html"><button type="button" class="btn btn-warning cancel"> CANCEL ORDER </button></a>
-            &nbsp;&nbsp;
-            <button type="button" class="btn btn-primary place">PLACE ORDER</button>
-        </div>
+        <form method="post" action="send_email.php">
+            <div class="form-group">
+                <label for="name"> Name</label>
+                <input name="name" type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input name="address" type="text" class="form-control" id="address" placeholder="Address">
+            </div>
+            <div class="form-group">
+                <label for="nic">NIC Number</label>
+                <input name="nic" type="text" class="form-control" id="nic" placeholder="NIC">
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Number</label>
+                <input name="contact" type="text" class="form-control" id="contact" placeholder="Contact">
+            </div>
+            <div >
+                <label >Add your wish list clearly in here</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control"   placeholder="add your wish list clearly in here" id="floatingTextarea"></textarea>
+            </div>
+            <div class="d-flex justify-content-end">
+                <a href="./index.html"><button type="button" class="btn btn-warning cancel"> CANCEL ORDER </button></a>
+                &nbsp;&nbsp;
+                <button type="submit" class="btn btn-primary place">PLACE ORDER</button>
+            </div>
+        </form>
     </div>
 
     <div class="split right">
